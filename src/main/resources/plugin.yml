@@ -1,0 +1,6 @@
+main: LoreButton
+name: LoreButton
+version: 1.0
+api-version: "1.16"
+author: Bjarne Roß
+description: Create a Lore using a Button!
