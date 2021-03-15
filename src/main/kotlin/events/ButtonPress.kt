@@ -1,10 +1,8 @@
 package events
 
 import org.bukkit.Location
-import org.bukkit.Material
 import org.bukkit.block.Block
 import org.bukkit.block.BlockFace
-import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Minecart
 import org.bukkit.event.EventHandler
@@ -12,8 +10,6 @@ import org.bukkit.event.Listener
 import org.bukkit.event.block.Action
 import org.bukkit.event.player.PlayerInteractEvent
 import org.bukkit.material.Button
-import org.bukkit.material.Rails
-import java.util.logging.Logger
 
 class ButtonPress(private val blockType: String) : Listener {
 
