@@ -1,2 +1,2 @@
 # LoreButton
-Extend the range of your beacons!
+Create a Lore using a Button!
