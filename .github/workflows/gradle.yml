@@ -21,8 +21,8 @@ jobs:
     - name: Build with Gradle
       run: gradle build
     - name: Archive production artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: Store artifacts
-          path: |
-            target
+      uses: actions/upload-artifact@v2
+      with:
+        name: Store artifacts
+        path: |
+          target
