@@ -26,9 +26,9 @@ class ButtonPress(private val blockType: String) : Listener {
                         val railLoc: Location = rail.location
                         val loreLoc = Location(railLoc.world, railLoc.x, railLoc.y + 1.0, railLoc.z)
                         if (railLoc.x == block.location.x || railLoc.z == block.location.z) {
-                            val nearbyLores: Int = loreLoc.getNearbyEntitiesByType(Minecart::class.java, 5.0).count()
+                            val nearbyLores: Int = 0 //loreLoc.getNearbyEntitiesByType(Minecart::class.java, 5.0).count()
                             if (nearbyLores < 1) {
-                                loreLoc.world.spawnEntity(loreLoc, EntityType.MINECART)
+                                loreLoc.world?.spawnEntity(loreLoc, EntityType.MINECART)
                                 event.player.sendTitle("Good ride!", "", 20, 60, 20)
                             } else {
                                 event.player.sendTitle("Too many carts!", "Please use or remove nearby cart.", 20, 100, 20)
